@@ -7,7 +7,7 @@ function getChannelId(){
 	let formBox = document.querySelector(".box");
 	let sectionMeta = document.querySelector(".meta");
 	let channelIDvalue = document.querySelector("#channelID").value;
-	console.log(channelIDvalue);
+	//console.log(channelIDvalue);
 	formBox.style.display = "none";
 	sectionMeta.style.display = "block";
 	/* TODO processing */
@@ -117,9 +117,6 @@ function makeTable(totalNum) {
 				<th>Лайков</th>
 				<th>Дизлайков</th>
 				<th>Комментариев</th>
-				<th>Поделились</th>
-				<th>Общее время просмотров</th>
-				<th>Среднее время просмотра</th>
 			</thead></tr>
 			<tbody id="youtube_video">
 
@@ -142,9 +139,9 @@ function makeTable(totalNum) {
 		let td4 = document.createElement('td');
 		let td5 = document.createElement('td');
 		let td6 = document.createElement('td');
-		let td7 = document.createElement('td');
-		let td8 = document.createElement('td');
-		let td9 = document.createElement('td');
+		// let td7 = document.createElement('td');
+		// let td8 = document.createElement('td');
+		// let td9 = document.createElement('td');
 		let youtube_preview = document.createElement('img');
 
 		let youtube_video_link = document.createElement('a');
@@ -162,9 +159,9 @@ function makeTable(totalNum) {
 		td4.setAttribute("id", "youtube_likes_" + i);
 		td5.setAttribute("id", "youtube_comments_" + i);
 		td6.setAttribute("id", "youtube_dislikes_" + i);
-		td7.setAttribute("id", "youtube_shares_" + i);
-		td8.setAttribute("id", "youtube_est_time_" + i);
-		td9.setAttribute("id", "youtube_avg_time_" + i);
+		// td7.setAttribute("id", "youtube_shares_" + i);
+		// td8.setAttribute("id", "youtube_est_time_" + i);
+		// td9.setAttribute("id", "youtube_avg_time_" + i);
 		tr.append(td0);
 		tr.append(td1);
 		tr.append(td2);
@@ -172,9 +169,9 @@ function makeTable(totalNum) {
 		tr.append(td4);
 		tr.append(td5);
 		tr.append(td6);
-		tr.append(td7);
-		tr.append(td8);
-		tr.append(td9);
+		// tr.append(td7);
+		// tr.append(td8);
+		// tr.append(td9);
 	}
 }
 

@@ -34,391 +34,391 @@
 						<img src="#" alt="preview" class="preview">
 					</div>
 				</div>
-					<div class="content">
+				<div class="content">
 
-						<div type="button" class="collapsible_head">
-							<h3>Top Videos</h3>
-						</div>
-						<div class="content">
-							<div class="top-video-header">
-								<div class="top-video-number">
-									<h4>Show number of videos:</h4>
-									<button onclick="makeYoutubeTable(5)" class="btn">5</button>
-									<button onclick="makeYoutubeTable(10)" class="btn">10</button>
-									<button onclick="makeYoutubeTable(30)" class="btn">30</button>
-									<button onclick="makeYoutubeTable(50)" class="btn">50</button>
-								</div>
-								
-								<div class="top-video-sort">
-									<h4>API sort by all videos:</h4>
-									<select id="order_type" name="order">
-										<option value="0">Date</option>
-										<option value="1">Rating</option>
-										<option value="2">Relevance</option>
-										<option value="3">Title</option>
-										<option value="4">Video count</option>
-										<option value="5">View count</option>
-									</select>
-								</div>
-							</div>
-							<div id="top_video_youtube" class="scroll">
-							</div>
-						</div>
-
-						<div type="button" class="collapsible_head">
-							<h3>Subscriber statistics</h3>
-						</div>
-							<div class="content">
-								<hr>
-								<div class="scroll">
-									<table class="rounded">
-										<tr>
-											<th>Per day</th>
-											<th>
-												<p class="date7"></p>
-											</th>
-											<th>
-												<p class="date6"></p>
-											</th>
-											<th>
-												<p class="date5"></p>
-											</th>
-											<th>
-												<p class="date4"></p>
-											</th>
-											<th>
-												<p class="date3"></p>
-											</th>
-											<th>
-												<p class="date2"></p>
-											</th>
-											<th>
-												<p class="date1"></p>
-											</th>
-											<th><mark>
-													<p class="date0"></p>
-												</mark></th>
-										</tr>
-										<tr>
-											<td>By 30 days ago</td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-										</tr>
-										<tr>
-											<td>By 7 days ago</td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-										</tr>
-										<tr>
-											<td>By yesterday</td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-										</tr>
-										<tr>
-											<td><b>Amount</b></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td>
-												<p id="youtube_all_subs"></p>
-											</td>
-										</tr>
-									</table>
-								</div>
-
-							</div>
-
-						<div type="button" class="collapsible_head">
-							<h3>Main statistics</h3>
-						</div>
-							<div class="content">
-								<hr>
-								<p>Number of all videos:<span id="youtube_all_videos"></span></p>
-								<p>Total views: <span id="youtube_all_views"></span></p>
-								<p>Country: <span id="youtube_counry"></span></p>
-								<p>Published at: <span id="youtube_date"></span></p>
-								<p>Made for kids: <span id="youtube_for_kids"></span></p>
-								<p>Status: <span id="youtube_status"></span></p>
-
-								Keywords <p id="youtube_keywords"></p>
-								Description <p id="youtube_desc"></p>
-								Categories <p id="youtube_cats"></p>
-								<hr>
-								<h4>Videos statistics</h4>
-								<div class="scroll">
-									<table class="table_blur">
-
-										<tr>
-											<th>Per day</th>
-											<th>
-												<p class="date7"></p>
-											</th>
-											<th>
-												<p class="date6"></p>
-											</th>
-											<th>
-												<p class="date5"></p>
-											</th>
-											<th>
-												<p class="date4"></p>
-											</th>
-											<th>
-												<p class="date3"></p>
-											</th>
-											<th>
-												<p class="date2"></p>
-											</th>
-											<th>
-												<p class="date1"></p>
-											</th>
-											<th><mark>
-													<p class="date0"></p>
-												</mark></th>
-										</tr>
-
-										<tr>
-											<td>By 30 days ago<br><i>comments</i><br><i>shares</i><br><i>likes</i><br><i>dislikes</i><br><i>views</i></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-										</tr>
-
-										<tr>
-											<td>By 7 days ago<br><i>comments</i><br><i>shares</i><br><i>likes</i><br><i>dislikes</i><br><i>views</i></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-										</tr>
-
-										<tr>
-											<td>By yesterday<br><i>comments</i><br><i>shares</i><br><i>likes</i><br><i>dislikes</i><br><i>views</i></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-										</tr>
-
-										<tr>
-											<td><b>Amount<br><i>comments</i><br><i>shares</i><br><i>likes</i><br><i>dislikes</i><br><i>views</i></td>
-
-											<td>
-												<p id="youtube_comments_day_7"></p>
-												<p id="youtube_shares_day_7"></p>
-												<p id="youtube_likes_day_7"></p>
-												<p id="youtube_dislikes_day_7"></p>
-												<p id="youtube_views_day_7"></p>
-											</td>
-
-											<td>
-												<p id="youtube_comments_day_6"></p>
-												<p id="youtube_shares_day_6"></p>
-												<p id="youtube_likes_day_6"></p>
-												<p id="youtube_dislikes_day_6"></p>
-												<p id="youtube_views_day_6"></p>
-											</td>
-
-											<td>
-												<p id="youtube_comments_day_5"></p>
-												<p id="youtube_shares_day_5"></p>
-												<p id="youtube_likes_day_5"></p>
-												<p id="youtube_dislikes_day_5"></p>
-												<p id="youtube_views_day_5"></p>
-											</td>
-
-											<td>
-												<p id="youtube_comments_day_4"></p>
-												<p id="youtube_shares_day_4"></p>
-												<p id="youtube_likes_day_4"></p>
-												<p id="youtube_dislikes_day_4"></p>
-												<p id="youtube_views_day_4"></p>
-											</td>
-
-											<td>
-												<p id="youtube_comments_day_3"></p>
-												<p id="youtube_shares_day_3"></p>
-												<p id="youtube_likes_day_3"></p>
-												<p id="youtube_dislikes_day_3"></p>
-												<p id="youtube_views_day_3"></p>
-											</td>
-
-											<td>
-												<p id="youtube_comments_day_2"></p>
-												<p id="youtube_shares_day_2"></p>
-												<p id="youtube_likes_day_2"></p>
-												<p id="youtube_dislikes_day_2"></p>
-												<p id="youtube_views_day_2"></p>
-											</td>
-
-											<td>
-												<p id="youtube_comments_day_1"></p>
-												<p id="youtube_shares_day_1"></p>
-												<p id="youtube_likes_day_1"></p>
-												<p id="youtube_dislikes_day_1"></p>
-												<p id="youtube_views_day_1"></p>
-											</td>
-
-											<td>
-												<p id="youtube_comments_day_0"></p>
-												<p id="youtube_shares_day_0"></p>
-												<p id="youtube_likes_day_0"></p>
-												<p id="youtube_dislikes_day_0"></p>
-												<p id="youtube_views_day_0"></p>
-											</td>
-
-										</tr>
-									</table>
-								</div>
-								<h4>Amount time statistics</h4>
-								<div class="scroll">
-									<table class="table_blur">
-										<tr>
-											<th>Per day</th>
-											<th>
-												<p class="date7"></p>
-											</th>
-											<th>
-												<p class="date6"></p>
-											</th>
-											<th>
-												<p class="date5"></p>
-											</th>
-											<th>
-												<p class="date4"></p>
-											</th>
-											<th>
-												<p class="date3"></p>
-											</th>
-											<th>
-												<p class="date2"></p>
-											</th>
-											<th>
-												<p class="date1"></p>
-											</th>
-											<th><mark>
-													<p class="date0"></p>
-												</mark></th>
-										</tr>
-
-										<tr>
-											<td>By 30 days ago<br><i>Estimated minutes watched</i><br><i>Average view duration</i></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-										</tr>
-
-										<tr>
-											<td>By 7 days ago<br><i>Estimated minutes watched</i><br><i>Average view duration</i></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-										</tr>
-
-										<tr>
-											<td>By yesterday<br><i>Estimated minutes watched</i><br><i>Average view duration</i></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-											<td><span class="paid-info"></span></td>
-										</tr>
-
-										<tr>
-											<td><b>Amount<br><i>Estimated minutes watched</i><br><i>Average view duration</i></td>
-
-											<td>
-												<p id="youtube_estMin_day_7"></p>
-												<p id="youtube_avgViewDur_day_7"></p>
-											</td>
-
-											<td>
-												<p id="youtube_estMin_day_6"></p>
-												<p id="youtube_avgViewDur_day_6"></p>
-											</td>
-
-											<td>
-												<p id="youtube_estMin_day_5"></p>
-												<p id="youtube_avgViewDur_day_5"></p>
-											</td>
-
-											<td>
-												<p id="youtube_estMin_day_4"></p>
-												<p id="youtube_avgViewDur_day_4"></p>
-											</td>
-
-											<td>
-												<p id="youtube_estMin_day_3"></p>
-												<p id="youtube_avgViewDur_day_3"></p>
-											</td>
-
-											<td>
-												<p id="youtube_estMin_day_2"></p>
-												<p id="youtube_avgViewDur_day_2"></p>
-											</td>
-
-											<td>
-												<p id="youtube_estMin_day_1"></p>
-												<p id="youtube_avgViewDur_day_1"></p>
-											</td>
-
-											<td>
-												<p id="youtube_estMin_day_0"></p>
-												<p id="youtube_avgViewDur_day_0"></p>
-											</td>
-
-										</tr>
-									</table>
-								</div>
-							</div>
+					<div type="button" class="collapsible_head">
+						<h3>Main statistics</h3>
 					</div>
+					<div class="content">
+						<hr>
+						<p>Number of all videos:<span id="youtube_all_videos"></span></p>
+						<p>Total views: <span id="youtube_all_views"></span></p>
+						<p>Country: <span id="youtube_counry"></span></p>
+						<p>Published at: <span id="youtube_date"></span></p>
+						<p>Made for kids: <span id="youtube_for_kids"></span></p>
+						<p>Status: <span id="youtube_status"></span></p>
+
+						Keywords <p id="youtube_keywords"></p>
+						Description <p id="youtube_desc"></p>
+						Categories <p id="youtube_cats"></p>
+						<!-- <hr>
+						<h4>Videos statistics</h4>
+						<div class="scroll">
+							<table class="table_blur">
+
+								<tr>
+									<th>Per day</th>
+									<th>
+										<p class="date7"></p>
+									</th>
+									<th>
+										<p class="date6"></p>
+									</th>
+									<th>
+										<p class="date5"></p>
+									</th>
+									<th>
+										<p class="date4"></p>
+									</th>
+									<th>
+										<p class="date3"></p>
+									</th>
+									<th>
+										<p class="date2"></p>
+									</th>
+									<th>
+										<p class="date1"></p>
+									</th>
+									<th><mark>
+											<p class="date0"></p>
+										</mark></th>
+								</tr>
+
+								<tr>
+									<td>By 30 days ago<br><i>comments</i><br><i>shares</i><br><i>likes</i><br><i>dislikes</i><br><i>views</i></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+								</tr>
+
+								<tr>
+									<td>By 7 days ago<br><i>comments</i><br><i>shares</i><br><i>likes</i><br><i>dislikes</i><br><i>views</i></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+								</tr>
+
+								<tr>
+									<td>By yesterday<br><i>comments</i><br><i>shares</i><br><i>likes</i><br><i>dislikes</i><br><i>views</i></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+								</tr>
+
+								<tr>
+									<td><b>Amount<br><i>comments</i><br><i>shares</i><br><i>likes</i><br><i>dislikes</i><br><i>views</i></td>
+
+									<td>
+										<p id="youtube_comments_day_7"></p>
+										<p id="youtube_shares_day_7"></p>
+										<p id="youtube_likes_day_7"></p>
+										<p id="youtube_dislikes_day_7"></p>
+										<p id="youtube_views_day_7"></p>
+									</td>
+
+									<td>
+										<p id="youtube_comments_day_6"></p>
+										<p id="youtube_shares_day_6"></p>
+										<p id="youtube_likes_day_6"></p>
+										<p id="youtube_dislikes_day_6"></p>
+										<p id="youtube_views_day_6"></p>
+									</td>
+
+									<td>
+										<p id="youtube_comments_day_5"></p>
+										<p id="youtube_shares_day_5"></p>
+										<p id="youtube_likes_day_5"></p>
+										<p id="youtube_dislikes_day_5"></p>
+										<p id="youtube_views_day_5"></p>
+									</td>
+
+									<td>
+										<p id="youtube_comments_day_4"></p>
+										<p id="youtube_shares_day_4"></p>
+										<p id="youtube_likes_day_4"></p>
+										<p id="youtube_dislikes_day_4"></p>
+										<p id="youtube_views_day_4"></p>
+									</td>
+
+									<td>
+										<p id="youtube_comments_day_3"></p>
+										<p id="youtube_shares_day_3"></p>
+										<p id="youtube_likes_day_3"></p>
+										<p id="youtube_dislikes_day_3"></p>
+										<p id="youtube_views_day_3"></p>
+									</td>
+
+									<td>
+										<p id="youtube_comments_day_2"></p>
+										<p id="youtube_shares_day_2"></p>
+										<p id="youtube_likes_day_2"></p>
+										<p id="youtube_dislikes_day_2"></p>
+										<p id="youtube_views_day_2"></p>
+									</td>
+
+									<td>
+										<p id="youtube_comments_day_1"></p>
+										<p id="youtube_shares_day_1"></p>
+										<p id="youtube_likes_day_1"></p>
+										<p id="youtube_dislikes_day_1"></p>
+										<p id="youtube_views_day_1"></p>
+									</td>
+
+									<td>
+										<p id="youtube_comments_day_0"></p>
+										<p id="youtube_shares_day_0"></p>
+										<p id="youtube_likes_day_0"></p>
+										<p id="youtube_dislikes_day_0"></p>
+										<p id="youtube_views_day_0"></p>
+									</td>
+
+								</tr>
+							</table>
+						</div>
+						<h4>Amount time statistics</h4>
+						<div class="scroll">
+							<table class="table_blur">
+								<tr>
+									<th>Per day</th>
+									<th>
+										<p class="date7"></p>
+									</th>
+									<th>
+										<p class="date6"></p>
+									</th>
+									<th>
+										<p class="date5"></p>
+									</th>
+									<th>
+										<p class="date4"></p>
+									</th>
+									<th>
+										<p class="date3"></p>
+									</th>
+									<th>
+										<p class="date2"></p>
+									</th>
+									<th>
+										<p class="date1"></p>
+									</th>
+									<th><mark>
+											<p class="date0"></p>
+										</mark></th>
+								</tr>
+
+								<tr>
+									<td>By 30 days ago<br><i>Estimated minutes watched</i><br><i>Average view duration</i></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+								</tr>
+
+								<tr>
+									<td>By 7 days ago<br><i>Estimated minutes watched</i><br><i>Average view duration</i></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+								</tr>
+
+								<tr>
+									<td>By yesterday<br><i>Estimated minutes watched</i><br><i>Average view duration</i></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+								</tr>
+
+								<tr>
+									<td><b>Amount<br><i>Estimated minutes watched</i><br><i>Average view duration</i></td>
+
+									<td>
+										<p id="youtube_estMin_day_7"></p>
+										<p id="youtube_avgViewDur_day_7"></p>
+									</td>
+
+									<td>
+										<p id="youtube_estMin_day_6"></p>
+										<p id="youtube_avgViewDur_day_6"></p>
+									</td>
+
+									<td>
+										<p id="youtube_estMin_day_5"></p>
+										<p id="youtube_avgViewDur_day_5"></p>
+									</td>
+
+									<td>
+										<p id="youtube_estMin_day_4"></p>
+										<p id="youtube_avgViewDur_day_4"></p>
+									</td>
+
+									<td>
+										<p id="youtube_estMin_day_3"></p>
+										<p id="youtube_avgViewDur_day_3"></p>
+									</td>
+
+									<td>
+										<p id="youtube_estMin_day_2"></p>
+										<p id="youtube_avgViewDur_day_2"></p>
+									</td>
+
+									<td>
+										<p id="youtube_estMin_day_1"></p>
+										<p id="youtube_avgViewDur_day_1"></p>
+									</td>
+
+									<td>
+										<p id="youtube_estMin_day_0"></p>
+										<p id="youtube_avgViewDur_day_0"></p>
+									</td>
+
+								</tr>
+							</table>
+						</div> -->
+					</div>
+
+					<div type="button" class="collapsible_head">
+						<h3>Top Videos</h3>
+					</div>
+					<div class="content">
+						<div class="top-video-header">
+							<div class="top-video-number">
+								<h4>Show number of videos:</h4>
+								<button onclick="makeYoutubeTable(5)" class="btn">5</button>
+								<button onclick="makeYoutubeTable(10)" class="btn">10</button>
+								<button onclick="makeYoutubeTable(30)" class="btn">30</button>
+								<button onclick="makeYoutubeTable(50)" class="btn">50</button>
+							</div>
+							
+							<div class="top-video-sort">
+								<h4>API sort by all videos:</h4>
+								<select id="order_type" name="order">
+									<option value="0">Date</option>
+									<option value="1">Rating</option>
+									<option value="2">Relevance</option>
+									<option value="3">Title</option>
+									<option value="4">Video count</option>
+									<option value="5">View count</option>
+								</select>
+							</div>
+						</div>
+						<div id="top_video_youtube" class="scroll">
+						</div>
+					</div>
+
+					<div type="button" class="collapsible_head">
+						<h3>Subscriber statistics</h3>
+					</div>
+					<div class="content">
+						<hr>
+						<div class="scroll">
+							<table class="rounded">
+								<tr>
+									<th>Per day</th>
+									<th>
+										<p class="date7"></p>
+									</th>
+									<th>
+										<p class="date6"></p>
+									</th>
+									<th>
+										<p class="date5"></p>
+									</th>
+									<th>
+										<p class="date4"></p>
+									</th>
+									<th>
+										<p class="date3"></p>
+									</th>
+									<th>
+										<p class="date2"></p>
+									</th>
+									<th>
+										<p class="date1"></p>
+									</th>
+									<th><mark>
+											<p class="date0"></p>
+										</mark></th>
+								</tr>
+								<tr>
+									<td>By 30 days ago</td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+								</tr>
+								<tr>
+									<td>By 7 days ago</td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+								</tr>
+								<tr>
+									<td>By yesterday</td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+								</tr>
+								<tr>
+									<td><b>Amount</b></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td><span class="paid-info"></span></td>
+									<td>
+										<p id="youtube_all_subs"></p>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				
+				</div>
 			</section>	
 		</main>
 		
