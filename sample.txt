@@ -1,0 +1,82 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "jU4adgogpiHA6gJMzdmXExpeu-8",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "3IfcSdSm1DGFjGxiHZS99kzscrc",
+      "id": "UCm3-xqAh3Z-CwBniG1u_1vw",
+      "snippet": {
+        "title": "Ambient",
+        "description": "Ambient your best place for relaxation, study and meditation 🙌🏻\n\nHere you will find best ambient, chillout, atmospheric, cinematic and chill music 🎶\n\nEnjoy daily videos and music mixes 🌺\n\nSubscribe and click on the bell icon for more wonderful music 🔔\n\n🎵 Submit your music: https://www.submithub.com/blog/ambient\n\nAny business offers, release album or video contact by email.",
+        "customUrl": "ambientmusicalgenre",
+        "publishedAt": "2013-03-09T14:45:16Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AAUvwni_e3T0E61iAFZpQg3ymQoijFG8JNqPc8GC31xYMg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AAUvwni_e3T0E61iAFZpQg3ymQoijFG8JNqPc8GC31xYMg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AAUvwni_e3T0E61iAFZpQg3ymQoijFG8JNqPc8GC31xYMg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Ambient",
+          "description": "Ambient your best place for relaxation, study and meditation 🙌🏻\n\nHere you will find best ambient, chillout, atmospheric, cinematic and chill music 🎶\n\nEnjoy daily videos and music mixes 🌺\n\nSubscribe and click on the bell icon for more wonderful music 🔔\n\n🎵 Submit your music: https://www.submithub.com/blog/ambient\n\nAny business offers, release album or video contact by email."
+        },
+        "country": "RU"
+      },
+      "statistics": {
+        "viewCount": "161277523",
+        "subscriberCount": "492000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "2218"
+      },
+      "topicDetails": {
+        "topicIds": [
+          "/m/04rlf",
+          "/m/02lkt"
+        ],
+        "topicCategories": [
+          "https://en.wikipedia.org/wiki/Music",
+          "https://en.wikipedia.org/wiki/Electronic_music"
+        ]
+      },
+      "status": {
+        "privacyStatus": "public",
+        "isLinked": true,
+        "longUploadsStatus": "longUploadsUnspecified",
+        "madeForKids": false
+      },
+      "brandingSettings": {
+        "channel": {
+          "title": "Ambient",
+          "description": "Ambient your best place for relaxation, study and meditation 🙌🏻\n\nHere you will find best ambient, chillout, atmospheric, cinematic and chill music 🎶\n\nEnjoy daily videos and music mixes 🌺\n\nSubscribe and click on the bell icon for more wonderful music 🔔\n\n🎵 Submit your music: https://www.submithub.com/blog/ambient\n\nAny business offers, release album or video contact by email.",
+          "keywords": "\"Music Channel\" AmbientMusicalGenre Ambient Chill Chillout Dream Atmospheric Electronic Relax Mix Музыка Vlogs Study Studying Inspiration Relaxation Sleeping Calm Listen LaMusica \"Youtube Music\" \"Study Music\" \"canal de musica\" \"Music for blog\" \"Music Channels\" Audio \"listen to music\" \"Музыкальный канал\" \"Музыка для отдыха\" \"Music for films\" \"Music for studying\" \"Music for gaming\" \"Music for sleeping\"",
+          "defaultTab": "Featured",
+          "trackingAnalyticsAccountId": "UA-42010526-1",
+          "showRelatedChannels": true,
+          "showBrowseView": true,
+          "unsubscribedTrailer": "RknoDIN4j04",
+          "profileColor": "#000000",
+          "country": "RU"
+        },
+        "image": {
+          "bannerExternalUrl": "https://yt3.ggpht.com/fOLkvmIyH1nzVjE3xfRP6vZFY8OddilhSCZWQF2MrBEa9YJxxsnAuuvCnD0mumG5t5aY36Tt"
+        }
+      }
+    }
+  ]
+}
