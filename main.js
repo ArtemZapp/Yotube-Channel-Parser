@@ -53,7 +53,7 @@ async function refresh() {
 			let youtubeKeywords = data.items[0].brandingSettings.channel.keywords;
 			let youtubeDesc = data.items[0].brandingSettings.channel.description;
 			let youtubeCounry = data.items[0].brandingSettings.channel.country;
-			let youtubeCats = data.items[0].topicDetails.topicCategories.join('<br>');
+			let youtubeCats = data.items[0].topicDetails.topicCategories;
 			let youtubeDate = data.items[0].snippet.publishedAt;
 			let bannerUrl = data.items[0].brandingSettings.image.bannerExternalUrl;
 			let youtubeForKids = data.items[0].status.madeForKids;
@@ -92,8 +92,12 @@ async function refresh() {
 
 			document.getElementById('youtube_keywords').innerHTML = youtubeKeywords || 'No keywords';
 			document.getElementById('youtube_desc').innerHTML = youtubeDesc || 'No description';
-			document.getElementById('youtube_counry').innerHTML = youtubeCounry;
-			document.getElementById('youtube_cats').innerHTML = youtubeCats;
+			document.getElementById('youtube_country_head').innerHTML = youtubeCounry;
+			document.querySelector('.youtube-country').src = `https://www.countryflags.io/${youtubeCounry.toLowerCase()}/shiny/48.png`;
+			
+			let youtubeCatsLinks = '';
+			youtubeCats.forEach(e => youtubeCatsLinks += `<a href="${e}">${e}</a><br>`);
+			document.getElementById('youtube_cats').innerHTML = youtubeCatsLinks;
 			document.getElementById('youtube_date').innerHTML = youtubeDate;
 
 		},
@@ -286,3 +290,10 @@ function test(){
 }
 
 test();
+
+function tryAnother() {
+	let formBox = document.querySelector(".box");
+	let sectionMeta = document.querySelector(".meta");
+	formBox.style.display = "block";
+	sectionMeta.style.display = "none";
+}

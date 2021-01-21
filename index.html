@@ -27,7 +27,7 @@
 			</div>
 
 			<section class="meta">
-				<button class="undo btn">try another</button>
+				<button class="undo btn" onclick="tryAnother()">try another</button>
 				<div type="button" class="collapsible main">
 					<div class="banner">
 						<h1>Channel name</h1>
@@ -41,16 +41,16 @@
 					</div>
 					<div class="content">
 						<hr>
-						<p>Number of all videos:<span id="youtube_all_videos"></span></p>
+						<p>Number of all videos: <span id="youtube_all_videos"></span></p>
 						<p>Total views: <span id="youtube_all_views"></span></p>
-						<p>Country: <span id="youtube_counry"></span></p>
+						<p>Country: <span id="youtube_country_head">UA</span><img class="youtube-country" src="#" alt="country-flag"></img></p>
 						<p>Published at: <span id="youtube_date"></span></p>
 						<p>Made for kids: <span id="youtube_for_kids"></span></p>
 						<p>Status: <span id="youtube_status"></span></p>
-
-						Keywords <p id="youtube_keywords"></p>
-						Description <p id="youtube_desc"></p>
-						Categories <p id="youtube_cats"></p>
+						<hr>
+						<p class="main-parts">Keywords</p> <p id="youtube_keywords"></p>
+						<p class="main-parts">Description</p> <p id="youtube_desc"></p>
+						<p class="main-parts">Categories</p> <p id="youtube_cats"></p>
 						<!-- <hr>
 						<h4>Videos statistics</h4>
 						<div class="scroll">

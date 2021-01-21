@@ -13,8 +13,12 @@ body{
 	font-family: 'Noto Sans', sans-serif;
 }
 a{
-  color: #555;
+  color: rgb(125, 155, 255);
   text-decoration: none;
+}
+p>span{
+  font-weight: 800;
+  color: darkgoldenrod;
 }
 .container{
   width: 100%;
@@ -143,7 +147,7 @@ text-align:center;
 }
 
 .active, .collapsible:hover{
-  background-color: #181818;
+  /* background-color: #181818; */
 }
 
 .active > h3::after{
@@ -338,4 +342,14 @@ text-align:center;
 .table_sort{
   margin-left: auto;
   margin-right: auto;
+}
+
+.youtube-country{
+  margin-left: 10px;
+  vertical-align: -75%;
+}
+
+.main-parts{
+  color: #000000;
+  font-size: larger;
 }
